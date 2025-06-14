@@ -1,12 +1,12 @@
-# Tripleten web_project_homeland
-
 # Projeto 5: TripleTen Art Gallery - Layout Responsivo
+
+**▶️ Visualizar Projeto Online**(https://douglasargenta.github.io/web_project_homeland/)
 
 Este é o quinto projeto da Trilha de Desenvolvimento Web da TripleTen, focado na implementação de um layout responsivo para a "TripleTen Art Gallery".
 
 ## Visão Geral do Projeto
 
-Este projeto implementa um layout responsivo para a 'TripleTen Art Gallery', garantindo uma experiência de usuário otimizada em desktop (1280px), tablet (768px) e mobile (320px).
+Este projeto implementa um layout responsivo para a 'TripleTen Art Gallery', garantindo uma experiência de usuário otimizada em desktop (1280px), tablet (768px) e mobile (320px). O desenvolvimento focou nas melhores práticas de CSS, como Flexbox e Media Queries, para replicar fielmente o design em todas as resoluções especificadas.
 
 ## Funcionalidades e Características
 
@@ -23,7 +23,40 @@ Este projeto implementa um layout responsivo para a 'TripleTen Art Gallery', gar
   - Flexbox
   - Media Queries
   - Unidades Relativas (px, em, %)
-- **Fonte Inter:**
+- **Normalize.css:** Utilizado para garantir a consistência de renderização entre diferentes navegadores.
+- **Fonte Inter:** Utilizada para a tipografia do projeto, com arquivos hospedados localmente na pastavendor/fonts/e fontes do sistema como alternativa.
+
+# Estrutura de Arquivos
+
+O projeto segue a metodologia BEM Flat para a organização dos arquivos e pastas:
+
+```
+/
+├── .gitignore
+├── .editorconfig
+├── index.html
+├── README.md
+├── assets/
+│ └── images/
+│ ├── desktop-view.png
+│ ├── tablet-view.png
+│ └── mobile-view.png
+├── blocks/
+│ ├── header.css
+│ ├── cover.css
+│ ├── intro.css
+│ ├── content.css
+│ ├── gallery.css
+│ └── footer.css
+├── images/
+│ └── (todas as imagens do projeto, ex: tripleten-logo.svg, cover-image.jpg)
+├── pages/
+│ └── index.css
+└── vendor/
+├── normalize.css
+└── fonts/
+└── (arquivos das fontes utilizadas, ex: Inter-Regular.woff)
+```
 
 ### Visualização do Projeto
 
@@ -46,3 +79,7 @@ Para futuras iterações e aprimoramento do projeto, planejo explorar:
 
 1.  **Animações Suaves:** Adicionar transições e animações CSS sutis para melhorar a experiência visual sem comprometer a performance.
 2.  **Componentes Reutilizáveis:** Refatorar o código para identificar e criar componentes CSS mais reutilizáveis, facilitando a manutenção e futuras expansões.
+
+```
+
+```
