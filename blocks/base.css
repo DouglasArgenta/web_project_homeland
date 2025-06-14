@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1280px;
+}

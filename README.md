@@ -45,8 +45,7 @@ O projeto segue a metodologia BEM Flat para a organização dos arquivos e pasta
 │ ├── header.css
 │ ├── cover.css
 │ ├── intro.css
-│ ├── content.css
-│ ├── gallery.css
+│ ├── base.css
 │ └── footer.css
 ├── images/
 │ └── (todas as imagens do projeto, ex: tripleten-logo.svg, cover-image.jpg)
