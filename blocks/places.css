@@ -1,0 +1,258 @@
+.places {
+  width: 90.625%;
+  margin: 0 auto;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.places__item {
+  display: grid;
+  gap: 48px 40px;
+  grid-template-areas:
+    "title artist"
+    "image description"
+    "button description";
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto 460px auto;
+  margin-bottom: 80px;
+}
+
+.places__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.places__title {
+  grid-area: title;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  padding: 0 20px;
+}
+
+.places__description {
+  grid-area: description;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.places__image {
+  grid-area: image;
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.places__button-buy-nft {
+  display: block;
+  width: 356.08px;
+  height: 48px;
+  background: linear-gradient(to right, #0278fe, #003a7b);
+  border-radius: 4px;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease-in-out;
+  margin-top: 0;
+  grid-area: button;
+}
+
+.places__button-buy-nft:hover {
+  opacity: 0.8;
+}
+
+.places__artist {
+  grid-area: artist;
+  align-self: flex-end;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.places__artist-label {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.places__artist-name {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.places__paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.places__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    width: 93.75%;
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .places__item {
+    gap: 32px 28px;
+    grid-template-columns: 355px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title artist"
+      "image description"
+      "button description";
+    margin-bottom: 72px;
+  }
+
+  .places__title {
+    font-size: 44px;
+    line-height: 52px;
+    margin-bottom: 0;
+  }
+
+  .places__image {
+    width: 100%;
+    height: auto;
+    max-height: 355px;
+  }
+
+  .places__button-buy-nft {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .places__artist {
+    margin-bottom: 0;
+  }
+
+  .places__artist-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .places__paragraph:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .places {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .places__item {
+    display: grid;
+    gap: 32px 0;
+    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "button";
+  }
+
+  .places__title {
+    grid-area: title;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .places__artist {
+    grid-area: artist;
+    margin-bottom: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .places__image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .places__description {
+    grid-area: description;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .places__button-buy-nft {
+    grid-area: button;
+    width: auto;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .places__paragraph:last-of-type {
+    margin-bottom: 0;
+  }
+}

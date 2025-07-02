@@ -1,18 +1,16 @@
 .intro {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente dentro do bloco intro */
-  text-align: center; /* Centraliza o texto dentro dos elementos (h2, p) */
-  /* --- MEDIR E AJUSTAR AQUI NO FIGMA --- */
-  padding-top: [Medida_Exata_Figma]px; /* Espaçamento superior do bloco intro */
-  padding-bottom: [Medida_Exata_Figma]px; /* Espaçamento inferior do bloco intro */
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .intro__image-container {
   width: 100%;
-  max-width: 984px; /* Largura da imagem no Figma */
-  /* --- MEDIR E AJUSTAR AQUI NO FIGMA --- */
-  margin-bottom: [Medida_Exata_Figma]px; /* Espaçamento entre a imagem e o título (.intro__title) */
+  max-width: 984px;
+  margin-bottom: 90px;
 }
 
 .intro__image {
@@ -23,40 +21,37 @@
 
 .intro__title {
   font-family: "Inter", Arial, sans-serif;
-  font-weight: 900; /* Inter Black */
-  font-size: 54px; /* Do Figma */
-  line-height: 58px; /* Do Figma */
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
   color: #ffffff;
-  margin: 0; /* Remove margem padrão do h2 */
-  max-width: 720px; /* Largura do bloco de texto no Figma */
-  /* --- MEDIR E AJUSTAR AQUI NO FIGMA --- */
-  margin-bottom: [Medida_Exata_Figma]px; /* Espaçamento abaixo do título (.intro__quote) */
+  margin: 0;
+  max-width: 720px;
+  margin-bottom: auto;
 }
 
 .intro__quote {
   font-family: "Inter", Arial, sans-serif;
-  font-weight: 400; /* Inter Regular */
-  font-size: 24px; /* Do Figma */
-  line-height: 34px; /* Do Figma */
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
   color: #ffffff;
-  margin: 0; /* Remove margem padrão do p */
-  max-width: 720px; /* Largura do bloco de texto no Figma */
+  margin: 0;
+  max-width: 720px;
 }
 
 .intro__quote-author {
-  display: block; /* Para que o autor fique em uma nova linha, se necessário */
-  text-align: right; /* Alinha o texto do autor à direita da citação */
-  /* --- MEDIR E AJUSTAR AQUI NO FIGMA --- */
-  margin-top: [Medida_Exata_Figma]px; /* Espaçamento acima do nome do autor */
+  display: block;
+  text-align: right;
+  margin-top: auto;
 }
 
 .intro__text {
   font-family: "Inter", Arial, sans-serif;
-  font-weight: 400; /* Inter Regular */
-  font-size: 16px; /* Do Figma */
-  line-height: 163%; /* Do Figma */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
   color: #ffffff;
-  /* --- MEDIR E AJUSTAR AQUI NO FIGMA --- */
-  margin-top: [Medida_Exata_Figma]px; /* Espaçamento acima do parágrafo de texto */
-  max-width: 720px; /* Largura do bloco de texto no Figma */
+  margin-top: auto;
+  max-width: 720px;
 }
