@@ -1,10 +1,6 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts.css");
 
-* {
-  box-sizing: border-box;
-}
-
 @import url("../blocks/base.css");
 @import url("../blocks/page.css");
 @import url("../blocks/header.css");

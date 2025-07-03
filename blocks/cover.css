@@ -42,7 +42,6 @@
   width: 100%;
   height: 615px;
   overflow: hidden;
-  margin: 0;
 }
 
 .cover__image {
@@ -52,7 +51,7 @@
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .cover {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -83,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 540px) {
   .cover {
     padding-top: 64px;
     padding-bottom: 64px;

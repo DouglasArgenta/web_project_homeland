@@ -1,6 +1,6 @@
 # Projeto 6: Projeto da TripleTen Art Gallery - Layout Responsivo e Avançado
 
-**▶️ Visualizar Projeto Online**(<COLE AQUI O LINK ATUALIZADO DO SEU GITHUB PAGES>)
+**▶️ Visualizar Projeto Online**[https://douglasargenta.github.io/web_project_homeland/]
 
 Este é o sexto projeto da Trilha de Desenvolvimento Web da TripleTen, focado na implementação de um layout responsivo e robusto para a "TripleTen Art Gallery".
 

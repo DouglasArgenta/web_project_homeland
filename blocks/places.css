@@ -119,7 +119,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .places {
     width: 93.75%;
     padding-top: 88px;
@@ -174,13 +174,13 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .places {
     width: 100%;
-    padding: 0; /* Remove padding here, it will be added to .places__item */
-    box-sizing: border-box;
+    padding: 0 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+    box-sizing: border-box;
   }
 
   .places__item {
@@ -195,8 +195,8 @@
       "image"
       "description"
       "button";
-    /* ADICIONAR ESTE PADDING AO ITEM, NÃO AOS ELEMENTOS INTERNOS */
-    padding: 0 20px; /* Adiciona 20px de padding em ambos os lados do item */
+    width: 100%;
+    padding: 0;
   }
 
   .places__title {
@@ -204,17 +204,13 @@
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 0;
-    /* REMOVER ESTE PADDING, JÁ ESTÁ NO .places__item */
-    padding: 0; /* Remova '0 20px', ou remova a linha */
-    box-sizing: border-box;
+    padding: 0;
   }
 
   .places__artist {
     grid-area: artist;
     margin-bottom: 0;
-    /* REMOVER ESTE PADDING, JÁ ESTÁ NO .places__item */
-    padding: 0; /* Remova '0 20px', ou remova a linha */
-    box-sizing: border-box;
+    padding: 0;
   }
 
   .places__image {
@@ -222,14 +218,12 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    box-sizing: border-box;
     margin-bottom: 0;
   }
 
   .places__description {
     grid-area: description;
     padding: 0;
-    box-sizing: border-box;
   }
 
   .places__button-buy-nft {
@@ -243,9 +237,11 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    white-space: normal;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     box-sizing: border-box;
+    padding: 13px 20px;
     margin-top: 0;
     margin-bottom: 0;
   }
